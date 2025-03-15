@@ -65,9 +65,15 @@ int minimumRecolors(string blocks, int k) {
 1. 越长越合法  
     一般要写 `ans += left`。<font  color='fed3a8'>累加贡献值</font>  
     滑动窗口的内层循环结束时，右端点固定在 right，左端点在 0,1,2,…,left−1 的所有子数组（子串）都是合法的，这一共有 left 个。  
-    
+    [1358. 包含所有三种字符的子字符串数目](https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters)  
+    [2799. 统计完全子数组的数目](https://leetcode.cn/problems/count-complete-subarrays-in-an-array/)  
+    [2537. 统计好子数组的数目](https://leetcode.cn/problems/count-the-number-of-good-subarrays)
 
-1. 越短越合法
+2. 越短越合法ans += right - left + 1
+   一般要写 ``。  
+   滑动窗口的内层循环结束时，右端点固定在 right，左端点在 left,left+1,…,right 的所有子数组（子串）都是合法的，这一共有 right−left+1 个。  
+   [3134. 找出唯一性数组的中位数](https://leetcode.cn/problems/find-the-median-of-the-uniqueness-array)  
+   [3261. 统计满足 K 约束的子字符串数量 II](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-ii)
 
 ## <font  color='dc843f'>求恰好</font>
 
@@ -79,12 +85,9 @@ int minimumRecolors(string blocks, int k) {
 
 <font  color='fed3a8'>总结：「恰好」可以拆分成两个「至少」，也就是两个「越长越合法」的滑窗问题。</font>
 
-注：也可以把问题变成 ≤k 减去 ≤k−1（两个至多）。可根据题目选择合适的变形方式。
-
-注：也可以把两个滑动窗口合并起来，维护同一个右端点 right 和两个左端点 left 
-1
-​
-  和 left 
-2
-​
- ，我把这种写法叫做三指针滑动窗口。
+注：也可以把问题变成 ≤k 减去 ≤k−1（两个至多）。可根据题目选择合适的变形方式。  
+注：也可以把两个滑动窗口合并起来，维护同一个右端点 right 和两个左端点 left1和 left2，我把这种写法叫做三指针滑动窗口。  
+[3306. 元音辅音字符串计数 II](https://leetcode.cn/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii)  
+[2401. 最长优雅子数组](https://leetcode.cn/problems/longest-nice-subarray)  
+[1712. 将数组分成三个子数组的方案数
+](https://leetcode.cn/problems/ways-to-split-array-into-three-subarrays)
