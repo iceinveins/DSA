@@ -69,11 +69,13 @@ int minimumRecolors(string blocks, int k) {
     [2799. 统计完全子数组的数目](https://leetcode.cn/problems/count-complete-subarrays-in-an-array/)  
     [2537. 统计好子数组的数目](https://leetcode.cn/problems/count-the-number-of-good-subarrays)
 
-2. 越短越合法ans += right - left + 1
-   一般要写 ``。  
+2. 越短越合法
+   一般要写`ans += right - left + 1`。  
    滑动窗口的内层循环结束时，右端点固定在 right，左端点在 left,left+1,…,right 的所有子数组（子串）都是合法的，这一共有 right−left+1 个。  
    [3134. 找出唯一性数组的中位数](https://leetcode.cn/problems/find-the-median-of-the-uniqueness-array)  
-   [3261. 统计满足 K 约束的子字符串数量 II](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-ii)
+   [3261. 统计满足 K 约束的子字符串数量 II](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-ii)  
+   [2781. 最长合法子字符串的长度](https://leetcode.cn/problems/length-of-the-longest-valid-substring/)  
+   [1040. 移动石子直到连续 II](https://leetcode.cn/problems/moving-stones-until-consecutive-ii/)
 
 ## <font  color='dc843f'>求恰好</font>
 
