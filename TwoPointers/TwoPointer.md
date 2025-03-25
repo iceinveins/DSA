@@ -15,6 +15,8 @@
 [2972. 统计移除递增子数组的数目 II 2153](https://leetcode.cn/problems/count-the-number-of-incremovable-subarrays-ii)  
 [2122. 还原原数组 2159](https://leetcode.cn/problems/recover-the-original-array)  
 [922. 按奇偶排序数组 II](https://leetcode.cn/problems/sort-array-by-parity-ii)  
+[2905. 找出满足差值条件的下标 II](https://leetcode.cn/problems/find-indices-with-index-and-value-difference-ii)  
+*[1031. 两个非重叠子数组的最大和](https://leetcode.cn/problems/maximum-sum-of-two-non-overlapping-subarrays)  
 
 ## <font  color='dc843f'>相向</font>
 [2105. 给植物浇水 II](https://leetcode.cn/problems/watering-plants-ii/)  
