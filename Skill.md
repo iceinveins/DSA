@@ -24,3 +24,30 @@
 
 ## <font  color='dc843f'>乘法原理</font>
 [3067. 在带权树网络中统计可连接服务器对数目](https://leetcode.cn/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network)
+
+## <font  color='dc843f'>单调栈</font>
+[456. 132 模式](https://leetcode.cn/problems/132-pattern)
+
+## <font  color='dc843f'>快速幂</font>
+```
+auto fastPow = [&](long long x, int p) -> int {
+            long long mul = 1;
+            while (p) {
+                if (p & 1) {
+                    mul *= x;
+                    mul %= MOD;
+                }
+                p >>= 1;
+                x *= x;
+                x %= MOD;
+            }
+            return mul;
+        };
+```
+[2438. 二的幂数组中查询范围内的乘积](https://leetcode.cn/problems/range-product-queries-of-powers)
+
+## <font  color='dc843f'>通过数值映射将元素数量关系转化为子数组和问题</font>
+适用场景：涉及两种元素平衡、循环依赖或模运算的问题。
+[525. 连续数组](https://leetcode.cn/problems/contiguous-array)  
+[32. 最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses)
+将(视为+1，)视为-1
